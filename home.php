@@ -6,7 +6,6 @@
  $b = $a-$b;
  $a = $a-$b;
  echo $a;
+ echo '<br>';
  echo $b;
- echo "how are you";
- echo "hello";
 ?>
