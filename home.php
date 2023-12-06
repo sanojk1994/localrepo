@@ -55,3 +55,17 @@ echo $temp2;
 echo'<br>';
 echo $temp;
 ?>
+<h3>How to find factorial of number</h3>
+<?php
+  function factorial($data)
+  {
+    $factor= 1;
+   for ($i=1; $i <= $data; $i++) { 
+      $factor = $factor*$i;
+   }
+   echo $factor;
+}
+factorial(5);
+?>
+
+ 
