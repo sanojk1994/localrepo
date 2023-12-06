@@ -30,3 +30,28 @@ echo 'max_1=' .$max_1;
 echo'<br>';
 echo 'max_1='.$max_2;
 ?>
+<h3>Finding max value using diffrent method </h3>
+<?php
+$data = array('200', '15','69','122','50','201');
+$cont = count($data);
+$temp ='';
+$temp2='';
+for ($j=0; $j < $cont; $j++) { 
+     for ($i=0; $i < count($data)-1; $i++) { 
+         if ($data[$i+1] > $data[$i]){
+          $temp = $data[$i+1] ;
+          $data[$i+1] = $data[$i];
+          $data[$i] = $temp;
+          if($data[$i+1] == $data[1]){
+            $temp2 = $data[$i+1];
+            
+        }
+     }
+     }
+     
+     
+}
+echo $temp2;
+echo'<br>';
+echo $temp;
+?>
