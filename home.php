@@ -2,9 +2,9 @@
 <?php
  $a =4;
  $b = 5;
- $a = a+b;
- $b = a -b;
- $a = a -b;
+ $a = $a+$b;
+ $b = $a-$b;
+ $a = $a-$b;
  echo $a;
  echo $b;
  echo "how are you";
